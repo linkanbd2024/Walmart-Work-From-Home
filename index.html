@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Work From Home | Apply Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #e8edf5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* hero section — full color background */
+        .hero {
+            background: linear-gradient(135deg, #0a2a44 0%, #1a4a7a 40%, #0066b3 100%);
+            border-radius: 2.5rem;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 20, 40, 0.4);
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.2s;
+            color: white;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            padding: 0.4rem 1.4rem;
+            border-radius: 40px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1 1 420px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.4rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-text h1 span {
+            background: linear-gradient(135deg, #ffd966, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 550px;
+            margin-bottom: 1.8rem;
+            line-height: 1.6;
+        }
+
+        .offer-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-bottom: 2.2rem;
+        }
+
+        .offer-highlights li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .offer-highlights li::before {
+            content: "✓";
+            color: #ffd966;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
+        .btn-apply {
+            display: inline-block;
+            background: #ffb347;
+            color: #0a1e2f;
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding: 1rem 3.8rem;
+            border-radius: 60px;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            box-shadow: 0 14px 28px -8px rgba(0, 0, 0, 0.3);
+            transition: 0.2s ease;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(145deg, #ffb84d, #f59f2e);
+            text-align: center;
+            color: #0a1e2f;
+        }
+
+        .btn-apply:hover {
+            transform: scale(1.02);
+            background: #f5a62a;
+            box-shadow: 0 18px 34px -8px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-apply:active {
+            transform: scale(0.97);
+        }
+
+        .hero-visual {
+            flex: 1 1 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-visual img {
+            max-width: 100%;
+            width: 100%;
+            max-width: 340px;
+            height: auto;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.35);
+            transition: 0.3s ease;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-visual img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 28px 48px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* feature cards — full color */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0 1.5rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(145deg, #ffffff, #f5f9ff);
+            border-radius: 2rem;
+            padding: 1.8rem 1.2rem;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 30, 60, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.25s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 32px -8px rgba(0, 60, 120, 0.15);
+            background: #ffffff;
+        }
+
+        .feature-card h3 {
+            color: #0a2638;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-card p {
+            color: #2a4a66;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .feature-icon {
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* testimonial — full color */
+        .testimonial-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+            background: linear-gradient(135deg, #0b2a44, #1a4a7a);
+            border-radius: 2rem;
+            padding: 2rem 2.5rem;
+            margin: 2rem 0 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 20, 40, 0.15);
+            color: white;
+        }
+
+        .testimonial-wrap img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffb347;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-text {
+            flex: 1;
+        }
+
+        .testimonial-text p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .testimonial-text strong {
+            color: #ffd966;
+            font-style: normal;
+        }
+
+        /* footer links */
+        .footer-links {
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem 3rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a {
+            color: #1a3e5c;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.15s;
+            border-bottom: 1px solid transparent;
+            color: #e0e8f0;
+        }
+
+        .footer-links a:hover {
+            color: #ffb347;
+            border-bottom: 1px solid #ffb347;
+        }
+
+        .footer-copy {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #a0b8d0;
+            margin-top: 1.5rem;
+            letter-spacing: 0.2px;
+        }
+
+        /* page cards for terms, contact, privacy */
+        .page-card {
+            background: white;
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 8px 20px rgba(0,20,40,0.04);
+            border: 1px solid #eef3f8;
+        }
+
+        .page-card h2 {
+            font-size: 2rem;
+            color: #0a1e2f;
+            margin-bottom: 1rem;
+        }
+
+        .page-card p {
+            color: #1f394f;
+            line-height: 1.7;
+            max-width: 700px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: #0066b3;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .page-target {
+            display: none;
+        }
+
+        .page-target:target {
+            display: block;
+        }
+
+        .page-target:target ~ .default-content {
+            display: none;
+        }
+
+        .default-content {
+            display: block;
+        }
+
+        .footer-wrapper {
+            background: #0a1e2f;
+            border-top: 1px solid #1a3a5a;
+            padding: 1.5rem 0 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 680px) {
+            .hero {
+                padding: 2rem 1.5rem;
+                border-radius: 2rem;
+            }
+            .hero-text h1 {
+                font-size: 2.4rem;
+            }
+            .btn-apply {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 1rem;
+            }
+            .footer-links {
+                gap: 1rem 1.8rem;
+                font-size: 0.9rem;
+            }
+            .testimonial-wrap {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.8rem;
+            }
+            .hero-visual img {
+                max-width: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- main hero + apply button -->
+    <div class="default-content" id="main-content">
+        <div class="hero">
+            <span class="badge">🔥 Now hiring – remote</span>
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Walmart <span>Work From Home</span></h1>
+                    <p>Part‑time & Full‑time roles available. Join the world's largest retailer from the comfort of your home. Flexible schedules, competitive pay, and career growth.</p>
+                    
+                    <ul class="offer-highlights">
+                        <li>Flexible shifts (PT/FT)</li>
+                        <li>Equipment provided</li>
+                        <li>Paid training & benefits</li>
+                    </ul>
+
+                    <!-- APPLY NOW BUTTON with offer link -->
+                    <a href="https://www.af9m8trk.com/85N11AS3/8YN126KW/" class="btn-apply" target="_blank" rel="noopener noreferrer">Apply Now →</a>
+                </div>
+                <div class="hero-visual">
+                    <!-- real photo (Unsplash remote work) -->
+                    <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=400&fit=crop&crop=center&auto=format" alt="Walmart Work from home remote job" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- feature highlights -->
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⏳</span>
+                <h3>Part‑time / Full‑time</h3>
+                <p>Choose shifts that fit your life</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">💻</span>
+                <h3>Remote setup</h3>
+                <p>Laptop & headset provided</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📈</span>
+                <h3>Career growth</h3>
+                <p>Internal promotions & training</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🛡️</span>
+                <h3>Benefits</h3>
+                <p>Health, 401k, paid time off</p>
+            </div>
+        </div>
+
+        <!-- testimonial with photo — full color background -->
+        <div class="testimonial-wrap">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=face&auto=format" alt="Employee testimonial" loading="lazy">
+            <div class="testimonial-text">
+                <p>“I started part‑time and within 6 months I was promoted to team lead. Walmart truly supports your growth — and working from home is a game changer.”</p>
+                <p><strong>— Sarah J., Remote Associate</strong></p>
+            </div>
+        </div>
+
+        <!-- extra cta -->
+        <div style="text-align: center; margin: 2.5rem 0 1rem;">
+            <p style="color: #1a3e5c; font-weight: 500; font-size: 1.05rem;">Limited spots — Apply today and start your remote career with Walmart.</p>
+            <a href="https://www.af9m8trk.com/85N11AS3/8YN126KW/" class="btn-apply" style="margin-top: 1rem; display: inline-block; font-size: 1.2rem; padding: 0.8rem 3rem; background: #ffb347; color: #0a1e2f;" target="_blank" rel="noopener noreferrer">Apply Now</a>
+        </div>
+    </div>
+
+    <!-- hidden pages: Terms, Contact, Privacy (via :target) -->
+    <div id="terms" class="page-target">
+        <div class="page-card">
+            <h2>Terms & Conditions</h2>
+            <p><strong>Last updated:</strong> July 2026</p>
+            <p>By applying through this page, you agree that the job offer is subject to Walmart's hiring process. This landing page is for informational purposes only. The employer (Walmart) is the sole entity responsible for all employment decisions. We do not guarantee placement. All personal data provided during application will be handled per our Privacy Policy.</p>
+            <p>You must meet the minimum age, background, and work eligibility requirements. Part‑time and full‑time positions are available based on business needs. Wages and benefits are determined by Walmart.</p>
+            <a href="#main-content" class="back-link">← Back to offer</a>
+        </div>
+    </div>
+
+    <div id="privacy" class="page-target">
+        <div class="page-card">
+            <h2>Privacy Policy</h2>
+            <p>We respect your privacy. This page does not collect or store any personal data unless you click the "Apply Now" button, which redirects to the official Walmart application portal (third‑party). Any information you provide there is governed by Walmart's privacy practices.</p>
+            <p>We may use cookies for analytics to improve user experience. No sensitive data is shared. For any concerns, contact us via the Contact page.</p>
+            <a href="#main-content" class="back-link">← Back to offer</a>
+        </div>
+    </div>
+
+    <div id="contact" class="page-target">
+        <div class="page-card">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> support@wfmjobs.example</p>
+            <p><strong>Response time:</strong> within 24 hours (Mon–Fri)</p>
+            <p>For job-related questions, please refer to the official Walmart careers page. This landing is for marketing purposes only.</p>
+            <a href="#main-content" class="back-link">← Back to offer</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer -->
+<div class="footer-wrapper">
+    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+        <div class="footer-links">
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-copy">
+            &copy; 2026 · Walmart Work From Home · This is a marketing landing page.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
